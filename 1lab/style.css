@@ -3,16 +3,10 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
-    /* font-family: 'Open Sans', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 .header {
     height: 10vh;
@@ -25,6 +19,7 @@ body {
 .header__title{
     margin: auto 0;
     font-size: 32px;
+    color:wheat;
 }
 .header__nav {
     margin: auto 0;
@@ -48,13 +43,14 @@ body {
 }
 
 .main {
-    background: url("./img/background1.jpg") top;
+    background: url("./img/background1.jpg") center left fixed;
+    background-size: calc(100vw)/2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .main-section {
-    display: flex;
+    display: block;
 }
 
 .main-section__img {
@@ -81,6 +77,9 @@ table {
     background: #60275e;
     color: #fff;
     border-collapse: collapse;
+}
+table caption {
+    background: white;
 }
 
 th {
