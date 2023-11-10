@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+.header {
+    height: 10vh;
+    background-color: #60275e;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+    padding: 0 50px;
+}
+.header__title{
+    margin: auto 0;
+    font-size: 32px;
+    color:wheat;
+}
+.header__nav {
+    margin: auto 0;
+}
+.nav__body {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+.nav__item {
+    background-color: #421941;
+    padding: 5px;
+}
+.nav__link {
+    text-decoration: none;
+    color:#fff
+}
+.main {
+    height: 85vh;
+    width: 100%;
+}
+
+.main {
+    background: url("./img/background1.jpg") center left fixed;
+    background-size: calc(100vw)/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section {
+    display: block;
+}
+
+.main-section__img {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #60275e;
+    color: #fff;
+}
+
+.footer__info {
+    margin-left: 30px;
+    display: flex;
+    gap: 30px
+}
+
+table {
+    background: #60275e;
+    color: #fff;
+    border-collapse: collapse;
+}
+table caption {
+    background: white;
+}
+
+th {
+    border: 3px solid white;
+    font-weight: 700;
+}
+td {
+    border: 3px solid white;
+    text-align: center;
+}
+.form__container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./img/background1.jpg");
+
+}
+form {
+    background-color: #60275e;
+    color: white
+}
+
+input {
+    display: block;
+    margin-bottom: 2vh;
+}
+
+#fromSearch{
+    display: inline;
+    margin-right: .5vw;
+}
+#fromAd{
+    display: inline;
+    margin-right: .5vw;
+}
+
+select {
+    display: block;
+    margin-bottom: 2vh;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 2vh;
+}
+
+#approval {
+    display: inline;
+}
+
+#remember {
+    display: inline;
+}
+
+button{
+    display: block;
+    background-color: rgb(0, 204, 255);
+    margin-top: 2vh;
+}
