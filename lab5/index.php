@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php 
-        include "db.php";
+        require "db.php";
         $resultImg = mysqli_query($mysql, "SELECT * FROM `images`");
         $result2 = mysqli_query($mysql, "SELECT * FROM `words`");
     ?>
@@ -27,9 +27,7 @@
         <section class="main-section">
             <div class="header__title"> Фото </div>
             <?php while($name = mysqli_fetch_assoc($resultImg)) { ?>
-                    <div>
-                        <img  title="<?php echo $name['name'];?>" src="<?php echo $name['img'];?>" />
-                    </div>
+                    <img class="main-section__img" title="<?php echo $name['name'];?>" src="<?php echo $name['img'];?>" />
                 <?php
                 }
             ?>
