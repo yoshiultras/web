@@ -13,10 +13,21 @@
         <div class="header__title">Мой Снежок</div>
         <nav class="header__nav nav">
             <ul class="nav__body">
-                <li class="nav__item"><a href="index.php" <?php $current_page1 = true; if ($current_page1) echo 'class="current__page"'; ?>>Главная</a></li>
-                <li class="nav__item"><a class="nav__link" href="feedback.php">Обратная связь</a></li>
-                <li class="nav__item"><a class="nav__link" href="auntethication.php">Авторизация</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Достижения снежка</a></li>
+            <li class="nav__item"><a href=<?php $current_page1 = true; 
+                    $name = 'Главная'; 
+                    $link = 'index.php ';
+                    if ($current_page1) echo $link;
+                    echo 'class="current_page"'; ?>><?php echo $name ?></a></li>
+                <li class="nav__item"><a href=<?php
+                    $name = 'Обратная связь'; 
+                    $link = 'feedback.php ';
+                    echo $link;
+                    echo 'class="nav__link"'; ?>><?php echo $name ?></a></li>
+                <li class="nav__item"><a href=<?php
+                    $name = 'Авторизация'; 
+                    $link = 'auntethication.php ';
+                    echo $link;
+                    echo 'class="nav__link"'; ?>><?php echo $name ?></a></li>
             </ul>
         </nav>
     </header>
