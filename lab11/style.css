@@ -1,0 +1,142 @@
+
+
+.header {
+    background-color: rgb(0, 0, 0);
+    /* color: white; */
+    background-image: url(../images/codeBackground.png);
+    background-size: cover;
+}
+
+
+.mail {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.mail a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation:hover{
+    transition: color 0.5;
+    color:chartreuse;
+}
+.bton:hover{
+    transition: border-color 0.5s, background-color 0.5s;
+    border-color: white;
+    background-color:rgb(0, 0, 0);
+}
+.bton {
+    display: inline-block;
+    font-weight: bold;
+    border: 2px solid azure;
+    background-color: rgb(165, 164, 164);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    color: aliceblue;
+}
+
+input,
+textarea,
+select {
+    font-size: inherit;
+}
+
+.btn {
+    display: block;
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    font-size: 20px;
+    color: azure;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    color:grey;
+    text-align: center;
+}
+
+footer p {
+    color: grey;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+header a{
+    text-decoration: none;
+    color:white;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.selected {
+    color: aqua ; 
+    font-weight: bolder;
+}
+
+.ttRow {
+    border: #A63E00 2px solid;
+    margin: 30px;
+    padding: 15px;
+}
+
+.ttSingleRow {
+    border: #A63E00 2px solid;
+    margin: 30px;
+    font-size: 32px;
+}
+
+.mult {
+    margin: auto;
+    max-width: 1300px;
+    margin-left: 40px;
+}
+
+.product_menu_class {
+    margin-left: 40px;
+}
+
+.line {
+    display: inline-block;
+}
+
+td {
+    padding: 5px;
+}
+
+.table {
+    margin-bottom: 20px;
+    float:left;
+    margin-right: 20px;
+}
+
+.choosed {
+    font-size: 32px;
+}

@@ -1,0 +1,12 @@
+.valueTable{
+    border-collapse: collapse;
+}
+.valueColumn{
+    border: 1px solid black;
+    padding: 2px;
+}
+.result{
+    margin: 5px 8px;
+    border: 2px solid red;
+    flex-direction: row;
+}
