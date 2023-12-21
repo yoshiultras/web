@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.screen {
+    border: 1px solid red;
+    font-size: 36px;
+    max-width: 275px;
+    overflow: auto;
+}
+
+.calc-container {
+    display: grid;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    grid-template-rows: 1fr 3fr;
+    gap: 10px
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 10px;
+}
+
+.digits, .other{
+    display: grid;
+}
+
+.digits {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.other{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    position: relative;
+}
+.other::before{
+    content: '';
+    position: absolute;
+    left: -5px;
+    height: 100%;
+    width: 1px;
+    background: #000;
+}
+
+button{
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+}

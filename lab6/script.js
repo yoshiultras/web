@@ -7,9 +7,9 @@ function pow(x, n) {
 }
 x = 2;
 let n = 3;
-document.querySelector('.powx').innerText = x;
-document.querySelector('.pown').innerText = n;
-document.querySelector('.powResult').innerText = pow(x, n);
+document.getElementsByClassName('powx')[0].innerText = x;
+document.getElementsByClassName('pown')[0].innerText = n;
+document.getElementsByClassName('powResult')[0].innerText = pow(x, n);
 
 
 function gcd(a, b) {
@@ -18,9 +18,9 @@ function gcd(a, b) {
 }
 let a = 56;
 let b = 36;
-document.querySelector('.gcda').innerText = a;
-document.querySelector('.gcdb').innerText = b;
-document.querySelector('.gcdResult').innerText = gcd(a, b);
+document.getElementById('gcda').innerText = a;
+document.getElementById('gcdb').innerText = b;
+document.getElementById('gcdResult').innerText = gcd(a, b);
 
 
 function minDigit(x) {
@@ -37,7 +37,7 @@ function pluralizeRecords(n) {
     else if(n % 10 === 2 || n % 10 === 3 || n % 10 === 4) return `В результате выполнения запроса были найдены ${n} записи`;
     return `В результате выполнения запроса было найдено ${n} записей`;
 }
-n = 5;
+n = 21;
 document.querySelector('.pluralizeRecordsn').innerText = n;
 document.querySelector('.pluralizeRecordsResult').innerText = pluralizeRecords(n);
 
