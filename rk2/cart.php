@@ -39,9 +39,9 @@ if (isset($_POST['remove'])) {
         <?php
             try {
                 define('DB_HOST', 'localhost'); //Адрес
-                define('DB_USER', 'roadyld0_shop'); //Имя пользователя
-                define('DB_PASSWORD', 'Sosa123!'); //Пароль
-                define('DB_NAME', 'roadyld0_shop'); //Имя БД
+        define('DB_USER', 'w90318po_bd'); //Имя пользователя
+        define('DB_PASSWORD', 'N2k3ita0987!'); //Пароль
+        define('DB_NAME', 'w90318po_bd'); //Имя БД
                 $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
                 $link = mysqli_connect(DB_HOST,DB_USER, DB_PASSWORD);
                 mysqli_select_db($link, DB_NAME);
