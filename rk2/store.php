@@ -7,14 +7,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <?php
     include('sections/header.php');
     ?>
-    <table>
-        <tr><th>Название</th><th>Картинка</th><th>Цена</th><th>Краткое описание</th><th>Страница на ссылку товара</th></tr>
+    <div class="container mt-5">
         <?php
         try {
             define('DB_HOST', 'localhost'); //Адрес
@@ -31,10 +30,20 @@ session_start();
         $result = mysqli_query($link, $sql);
         $i = 1;
         while ($row = mysqli_fetch_array($result)) {
-            echo "<tr><td>{$row['title']}</td>" . '<td><img src="' . $row['img'] . '" alt=""></td>' . "<td>{$row['price']}$</td><td>{$row['short_description']}</td><td><a href=" . '"product.php?id=' . $i . '"' . ">Страница товара</a></td></tr>";
+            echo "<div class='row'>";
+            echo "<div class='col-md-2'><p>{$row['title']}</p></div>" . 
+                    "<div class='col-md-3'><img style='height:200px;' src='" . $row['img'] . "' alt=''></div>" . 
+                    "<div class='col-md-2'><p>{$row['price']}$</p></div>" . 
+                    "<div class='col-md-3'><p>{$row['short_description']}</p></div>" . 
+                    "<div class='col-md-2'><a href=" . '"product.php?id=' . $i . '"' . ">Страница товара</a></div>";
+            echo "</div>";
             $i = $i + 1;
         }
         ?>
-    </table>
+    </div>
+
+    <?php
+    include('sections/footer.php');
+    ?>
 </body>
 </html>

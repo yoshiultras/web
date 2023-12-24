@@ -19,7 +19,7 @@
         $row = mysqli_fetch_array($result);
         if (!empty($row) && $row[1] === $password) {
             $_SESSION["login"] = $row[0];
-            header('Location: /cart.php');
+            header('Location: /rk2/cart.php');
             die();
         }
         // header('Location: /cart.php');
@@ -33,24 +33,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <?php
     include('sections/header.php');
     ?>
+    <div class="container mt-5">
     <form action="" class="form" method="post">
-        <div class="form__login">
+        <div class="form-group">
             <label for="login">Логин</label>
-            <input type="text" name="login" id="login">
+            <input class="form-control" type="text" name="login" id="login">
         </div>
-        <div class="form__password">
+        <div class="form-group">
             <label for="password">Пароль</label>
-            <input type="password" name="password" id="password">
+            <input class="form-control" type="password" name="password" id="password">
         </div>
-        <button type="submit">
+        <br>
+        <button class="btn btn-primary" type="submit">
             Вход
         </button>
     </form>
+    </div>
+    <?php
+    include('sections/footer.php');
+    ?>
 </body>
 </html>
