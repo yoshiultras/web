@@ -21,6 +21,8 @@
             $sql = 'INSERT INTO users (login, password) VALUES ("' . $_POST['login'] . '", ' . '"' . $_POST['password'] . '")';
             $result = mysqli_query($link, $sql);
             $_SESSION["login"] = $_POST['login'];
+        } else {
+            header('Location: /rk2/authorization.php');
         }
 
 

@@ -12,8 +12,7 @@
 <body>
     <header class="header">
     <div class="mail">
-            <h1>Горьков Владимир Андреевич - Начинающий веб-разработчик</h1>
-            <a class="bton" href="mailto:gorkov2004777@gmail.com">Написать мне</a>
+            <h1>Лаб11</h1>
         </div>
         <div id="main_menu" class="nav menu">
             <?php 
